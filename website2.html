@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title></title>
+        <link href="style.css" ref="stylesheet">
+        <style>
+            body {
+                background-color: red;
+            }
+            ul {
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                overflow: hidden;
+                background-color: #333333;
+            }
+
+            li {
+                float: left;
+            }
+
+            li a {
+                display: block;
+                color: white;
+                text-align: center;
+                padding: 16px;
+                text-decoration: none;
+            }
+
+            li a:hover {
+                background-color: #111111;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="Links">
+            <ul>
+                <li><a href="website.html">Home</a></li>
+                <li><a href="website2.html">Lourie Ipsum</a></li>
+                <li><a href="#table">table</a></li>
+                <li><a href="#lakers">Canvas</a></li>
+                <li><a href="#Sauske">Sauske</a></li>
+                <li><a href="#differentPage">Link</a></li>
+            </ul>
+        </div>
+        <table id="table" border="1">
+            <caption>table of colors</caption>
+            <thead>
+                <tr>
+                    <th>yellow </th>
+                    <th>purple </th>
+                    <th>turquoise </th>
+                    <th> magenta </th>
+                </tr>
+            </thead>
+    
+            <tbody>
+                <tr>
+                    <td style="text-align:center"><b>green</b></td>
+                    <td>           </td>
+                    <td>           </td>
+                    <td>          </td>
+                </tr>
+                <tr>
+                    <td style="text-align:center"><b>blue</b> </td>
+                    <td>             </td>
+                    <td>             </td>
+                    <td>             </td>
+                </tr>
+                <tr>
+                    <td style="text-align:center"><b>baby blue</b></td>
+                    <td>         </td>
+                    <td>          </td>
+                    <td>          </td>
+                </tr>
+               
+                
+         
+            </table>
+            <div id="lakers">
+                <h2>no more lakers</h2>
+                <canvas id="myCanvas" 
+                width="200"
+                height="200">
+            </div>
+            <section id="Sauske">
+                <figcation>
+                    <figcaption>sauske uchiha</figcaption>
+                    <img src="https://lh4.googleusercontent.com/9eMLU-SQRYtQNr8U0A7jOjLqoyqoIavtcutERnf0jn1HXSQyjXIfumcBlpWUe19U_h-uf3s8Ypn2FpgoOHxJR4OtirYT3Gaz9jkxrmQjnZFBgzfZnTVb7pIeCNsczcDJzOlMhoB9qFhB6f4vyi8eONJYKs695x7TJZJ-QXt8KXAuss3GRR1zr42jmFeanQ"
+                     width="100" height="100"
+                     alt="sauske" title=" sauske uchiha">
+                </figcation>
+                
+            </section>
+
+           
+            
+            </div>
+            <section>
+                <h2 id="differentPage">Click here to see a Naruto page</h2>
+                <a href="https://naruto.fandom.com/wiki/Narutopedia" target="_blank">Naruto site</a>
+            </section>
+                  
+           
+            
+           
+        
+
+
+    </body>
+    <script> 
+        var canvas=document.getElementById("myCanvas");
+           var context=canvas.getContext("2d");
+         var backgroundImage = new Image();
+         backgroundImage.src="https://content.sportslogos.net/logos/6/237/full/2277_los_angeles_lakers-primary_on_dark-2002.png";
+         backgroundImage.onload = function() {
+           context.drawImage(backgroundImage, 0, 0, canvas.width, canvas.height);
+         
+         context.beginPath();
+         context.moveTo(0,0);
+         context.lineTo(200,200);
+         context.lineWidth=5;
+         context.stroke();
+
+         context.beginPath();
+         context.moveTo(200,0);
+         context.lineTo(0,200);
+         context.lineWidth=5;
+         context.stroke();
+
+           context.lineWidth=5;
+           context.stroke();
+         };
+         </script>
+</html>

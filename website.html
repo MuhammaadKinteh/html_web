@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+
+        <title></title>
+        <link href="style.css" ref="stylesheet" type="text/css">
+        <style>
+            body {
+                background-color: red;
+            }
+            ul {
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                overflow: hidden;
+                background-color: #333333;
+            }
+
+            li {
+                float: left;
+            }
+
+            li a {
+                display: block;
+                color: white;
+                text-align: center;
+                padding: 16px;
+                text-decoration: none;
+            }
+
+            li a:hover {
+                background-color: #111111;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="Links">
+            <ul>
+                <li><a href="website.html">Home</a></li>
+                <li><a href="website2.html">Lourie Ipsum</a></li>
+                <li><a href="#seahawk">seahawk</a></li>
+                <li><a href="#audio">Audio</a></li>
+                <li><a href="#video">Video</a></li>
+                <li><a href="#checkboxes">checkbox</a></li>
+            </ul>
+        
+
+            <div id="seahawk">
+            <h1>seahawk stadium on the map</h1>
+            <iframe src="https://www.google.com/maps/d/embed?mid=1XdmOKwZnhaht0Kbp55sVu0zTHOU&hl=en_US&ehbc=2E312F" 
+                    width="640" height="480"></iframe>
+            </div>            
+
+            <div id="video">
+                    <h2>cp3 dunks on dwight howard</h2>
+                <video controls
+                       preload
+                       width="640" 
+                       height="440" 
+                       poster="cp.png" >
+                <source src="cp3.mp4.mp4" 
+                        type="video/mp4">
+            </div>
+            <div id="audio">
+            <h2>short song</h2>
+                <audio controls  
+                       preload>
+                    <source src="song.mp3.mp3" 
+                            type="audio/mp3">
+                Your browser does not support the audio element.
+                </audio>
+            </div>
+            <section>
+                <h2 id="differentPage">Click here to see a Naruto page</h2>
+                <a href="https://naruto.fandom.com/wiki/Narutopedia" target="_blank">Naruto site</a>
+            </section>
+                  
+            <div id="checkboxes">
+                <h2>Checkboxes</h2>
+                >
+                
+                <form>
+                  <input type="checkbox" id="vehicle1" name="vehicle1" value="drive">
+                  <label for="vehicle1"> I drive to school</label><br>
+                  <input type="checkbox" id="vehicle2" name="vehicle2" value="bike">
+                  <label for="vehicle2"> I bike to school</label><br>
+                  <input type="checkbox" id="vehicle3" name="vehicle3" value="walk">
+                  <label for="vehicle3"> I walk to school</label><br><br>
+                  <input type="submit" value="Submit">
+                </form> 
+            </div>
+            
+           
+        
+
+
+    </body>
+    
+</html>
